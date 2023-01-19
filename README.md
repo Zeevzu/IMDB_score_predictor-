@@ -12,6 +12,7 @@ This is a class project as part of EE046211 - Deep Learning course @ Technion.
   </p>
 
 Link to the Drive with the Project - 
+<a href="https://drive.google.com/drive/folders/1ecvNFD-mHsSIs7fCg59mDQ6GgTRbyr9m?usp=share_link"><img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg" alt="Open In Colab"/></a>
 <p align="center">
     <a href="https://drive.google.com/drive/folders/1ecvNFD-mHsSIs7fCg59mDQ6GgTRbyr9m?usp=share_link">Project Drive</a>
 </p>
