@@ -10,12 +10,17 @@ This is a class project as part of EE046211 - Deep Learning course @ Technion.
   <br>
     Ze'ev Zukerman:  <a href="https://github.com/Zeevzu">GitHub</a>
   </p>
-  
- - [Predicting IMDB score from movie’s trailer](#Predicting%20IMDB%20score%20from%20movie’s%20trailer)
+
+Link to the Drive with the Project - 
+<p align="center">
+    <a href="https://drive.google.com/drive/folders/1ecvNFD-mHsSIs7fCg59mDQ6GgTRbyr9m?usp=share_link">Project Drive</a>
+ </p>
+## Agenda
   * [Background](#Background)  
   * [Dataset](#Dataset)  
   * [Model](#Model)  
   * [Files in the repository](#Files%20in%20the%20repository)
-  * [Sources](#Sources)
+
 
 ## Background
+
