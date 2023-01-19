@@ -14,7 +14,8 @@ This is a class project as part of EE046211 - Deep Learning course @ Technion.
 Link to the Drive with the Project - 
 <p align="center">
     <a href="https://drive.google.com/drive/folders/1ecvNFD-mHsSIs7fCg59mDQ6GgTRbyr9m?usp=share_link">Project Drive</a>
- </p>
+</p>
+
 ## Agenda
   * [Background](#Background)  
   * [Dataset](#Dataset)  
