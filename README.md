@@ -1,4 +1,6 @@
 # Predicting IMDB score from movie’s trailer
+<p align="center">
+<img src="https://static.amazon.jobs/teams/53/images/IMDb_Header_Page.jpg?1501027252" height="200" > </p>
 
 In this project we attempt to use a Pre-trained model to predict from selected frames of a trailer, it's IMDB score.
 We use Transfer-Learning by performing additional training on a pre-trained network, using the new dataset, to achieve this task.
