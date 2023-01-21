@@ -32,4 +32,6 @@ As mentioned previously, the goal of the project is to obtain the IMDB score of 
 <img src="./Block Diagram wanted.png" height="200" > </p>
 
 The main constraints we made for this project is reasonable traning and inference time. Those constraints guided us to be more creative with the input of our model.
-To have reasonable traning and inference time we used a pre-trained DNN model
+To have reasonable traning and inference time we used a pre-trained DNN model, also we assumed that video as an input will cause a huge input layer with big redundancy between following frames, as result we chose to sample randomly meaningful frames from the trailer and to have small amount of frames as the input to the model. So the actuall block diagram of our project is as follows.
+<p align="center">
+<img src="./Block Diagram Actual.png" height="200" > </p>
