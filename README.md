@@ -28,6 +28,8 @@ Link to the Drive with the Project - <p align="center">
 ## Background
 
 As mentioned previously, the goal of the project is to obtain the IMDB score of a movie, based on it's trailer, As showed in the following block diagram.
+<p align="center">
 <img src="./Block Diagram wanted.png" height="200" > </p>
 
-The main constraints we made for this project is reasonable traning and inference time. Those constraints 
+The main constraints we made for this project is reasonable traning and inference time. Those constraints guided us to be more creative with the input of our model.
+To have reasonable traning and inference time we used a pre-trained DNN model
