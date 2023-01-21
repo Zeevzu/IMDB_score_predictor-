@@ -21,7 +21,7 @@ Link to the Drive with the Project - <p align="center">
   * [Background](#Background)  
   * [Dataset](#Dataset)  
   * [Model](#Model)  
-  * [Results](#Results)
+  * [Training and Results](#Training%20and%20Results)
   * [Files in the repository](#Files%20in%20the%20repository)
 
 
@@ -41,3 +41,6 @@ To have reasonable traning and inference time we used a pre-trained DNN model, a
 
 ## Model
 As mentioned in the Background section, We worked with pre-trained Deep Neural Networks. The architectures we chose were - Resnet50, Resnet18 and VGG16. To all of those models we updated the input layer and the first 2D convolution layer to get 15 input channels. Also we added a linear output layer with 1 output because we use the network for regression task.
+As we can see in the next section, the architecture which achieved the best results was the VGG16, with the following updated architecture as showed below.
+<p align="center">
+<img src="./VGG16.png" height="200" > </p>
