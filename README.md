@@ -27,5 +27,7 @@ Link to the Drive with the Project - <p align="center">
 
 ## Background
 
-As mentioned previously, the goal of the project is to obtain the IMDB score of a movie, based on it's trailer.
+As mentioned previously, the goal of the project is to obtain the IMDB score of a movie, based on it's trailer, As showed in the following block diagram.
+<img src="./Block Diagram wanted.png" height="200" > </p>
+
 The main constraints we made for this project is reasonable traning and inference time. Those constraints 
