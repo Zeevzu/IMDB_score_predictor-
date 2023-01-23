@@ -29,12 +29,12 @@ Link to the Drive with the Project - <p align="center">
 
 As mentioned previously, the goal of the project is to obtain the IMDB score of a movie, based on it's trailer, As showed in the following block diagram.
 <p align="center">
-<img src="./Block Diagram wanted.png" height="300" > </p>
+<img src="./README images/Block Diagram wanted.png" height="300" > </p>
 
 The main constraints we made for this project is reasonable traning and inference time. Those constraints guided us to be more creative with the input of our model.
 To have reasonable traning and inference time we used a pre-trained DNN model, also we assumed that video as an input will cause a huge input layer with big redundancy between following frames, as result we chose to sample randomly meaningful frames from the trailer and to have small amount of frames as the input to the model. So the actuall block diagram of our project is as follows.
 <p align="center">
-<img src="./Block Diagram Actual.png" height="300" > </p>
+<img src="./README images/Block Diagram Actual.png" height="300" > </p>
 
 ## Dataset
 For the movie scores dataset we used - <p align="center">
@@ -44,7 +44,7 @@ For the trailers themselvs we used the excel file found under  directory excels,
 As mentioned above, the model input is a few random frames from the trailer. The problem with that is that maney movie frames are not informative. Some frames containe companey logo, text, fade away between two other frames, etc...
 
 <p align="center">
-<img src="./bad frames.PNG" height="500" > </p>
+<img src="./README images/bad frames.PNG" height="500" > </p>
 
 To combat that we used a preproceccing algorithm before choosing the "random" frames. For each trailer we sample a 100 frames, and for each frame we compute the mean and the variance. Than we deleate the frames with exceptianly low mean or variance compaired to the rest of the frames. Low mean coralates with black frames, and low std coralates with uniform frames (such as text on a uniform background).
 After that we sample random frames from the remaining frame pool.
@@ -57,4 +57,4 @@ After that we sample random frames from the remaining frame pool.
 As mentioned in the Background section, We worked with pre-trained Deep Neural Networks. The architectures we chose were - Resnet50, Resnet18 and VGG16. To all of those models we updated the input layer and the first 2D convolution layer to get 15 input channels. Also we added a linear output layer with 1 output because we use the network for regression task.
 As we can see in the next section, the architecture which achieved the best results was the VGG16, with the following updated architecture as showed below.
 <p align="center">
-<img src="./VGG16.png" height="400" > </p>
+<img src="./README images/VGG16.png" height="400" > </p>
