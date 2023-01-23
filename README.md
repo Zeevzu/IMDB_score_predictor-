@@ -37,6 +37,19 @@ To have reasonable traning and inference time we used a pre-trained DNN model, a
 <img src="./Block Diagram Actual.png" height="300" > </p>
 
 ## Dataset
+For the movie scores dataset we used - <p align="center">
+    <a href="https://www.kaggle.com/code/saurav9786/imdb-score-prediction-for-movies/data"> IMDB Movies Dataset </a></p>
+For the trailers themselvs we used the excel file found under  directory excels, which connect movie title with it's trailer youtube url. This excel is quite old, so some of the urls there dont exist anymore.
+
+As mentioned above, the model input is a few random frames from the trailer. The problem with that is that maney movie frames are not informative. Some frames containe companey logo, text, fade away between two other frames, etc...
+
+# insert images #
+
+To combat that we used a preproceccing algorithm before choosing the "random" frames. For each trailer we sample a 100 frames, and for each frame we compute the mean and the variance. Than we deleate the frames with exceptianly low mean or variance compaired to the rest of the frames. Low mean coralates with black frames, and low std coralates with uniform frames (such as text on a uniform background).
+After that we sample random frames from the remaining frame pool.
+
+
+
 
 
 ## Model
