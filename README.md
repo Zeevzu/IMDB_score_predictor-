@@ -43,7 +43,8 @@ For the trailers themselvs we used the excel file found under  directory excels,
 
 As mentioned above, the model input is a few random frames from the trailer. The problem with that is that maney movie frames are not informative. Some frames containe companey logo, text, fade away between two other frames, etc...
 
-# insert images #
+<p align="center">
+<img src="./bad frames.PNG" height="500" > </p>
 
 To combat that we used a preproceccing algorithm before choosing the "random" frames. For each trailer we sample a 100 frames, and for each frame we compute the mean and the variance. Than we deleate the frames with exceptianly low mean or variance compaired to the rest of the frames. Low mean coralates with black frames, and low std coralates with uniform frames (such as text on a uniform background).
 After that we sample random frames from the remaining frame pool.
