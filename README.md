@@ -21,7 +21,7 @@ Link to the Drive with the Project - <p align="center">
   * [Background](#Background)  
   * [Dataset](#Dataset)  
   * [Model](#Model)  
-  * [Training and Results](#Training%20and%20Results)
+  * [Training and Results](#Training And Results)
   * [Files in the repository](#Files%20in%20the%20repository)
 
 
@@ -60,7 +60,7 @@ As we can see in the next section, the architecture which achieved the best resu
 <img src="./README images/VGG16.png" height="400" > </p>
 
 
-## Training The Model
+## Training And Results
 We trained our models with Adam and a learning rate schezualer. Ther were a few training scemes and compaired the results. The schemes included changing the number of input frames to the model (5 RGB frame or 15 RGB frames), changing the input data augmentation (noising/ not noisng the frames, changing frames between ephochs, reordering frames in the input). We also changed the kind and depth of the input models (resnet50, resnet18, vgg16,vgg19). 
 
 We trained the models with mse loss between the predicted score and the real score. In order to ease the learning process, and to improve our understanding of the results we standartize the IMDN score labels.
@@ -71,4 +71,27 @@ The leaning curve of this model is:
 <p align="center">
 <img src="./README images/VggTraining.png" height="400" > </p>
 
+## Files in the repository
+### excels
+In the excels directory there are two excels files from wich we get the dataset. In the "movies_metadata.csv" file there is the movir title, year of publication. IMDB score, genere, director, etc...
+In the "ml-youtube.csv" file there is a connection between movie title, and youtube url. The excel is old so some of the video trailers there are either non existed or private. to get to the actual url the prefix "https://www.youtube.com/watch?v=" is needed before the writen url.
+### Images
+The "images" directory containe the frames of the trailers. For each movie there will be a folder with frames from its trailer: "\imgaes\{movie title}\{num}.jpg". The images are after filtering of bad frame (completely dark frames, frames with mainly text, etc...). There are between 50 to 100 frames per trailer.
+what presented in this repository is very few trailers in order to not have to much data.
+### dataset
+In this folder there is a file in the pickle format that contain a dataset one can simply load to train a model with
+### code
+In thif folder we have all of the code files needed to scrape the internet, preprocess the data, and train a model. Most of the code is writen in google colab (.ipynb files), and the rest in pure python (.py files). Here we present a in depth analasys of the code. In the next section we present a short description of haw to run the project.
+#### scrape_from_internet.ipynb
+This file download frames from the trailer in order to create the training dataset. It reads the excels, and create a list of movie titles, the scores, and their respective youtube url. The it shuffles the list (in order to not have some kind of movie bias), and donload 2000 trailers in the following way:
+First we download a trailer
+Then we take a 100 random frames from it and deleate the trailer (it takes a lot of memories).
+Out of this frames we take the statistics of the frames mean and std. We deleate the frames whos mean or std is in 20'th percentile (lowest mean and lowest std).
+This ensure to deleate frames that are not informative.
+We save the remaining frames in "\imgaes\{movie title}\{num}.jpg".
 
+#### CreateDatasetFromImages.ipynb
+This file usses the downloaded frames and creates a numpy dataset of the frames and the scores. The dataset is a list of movies, each movie contain 15 frames from the trailer, and its score. The 15 frames are stores as a 45 channels picture (15 frames, each one has RGB channels). The dataset is saved in a file names Dataset.
+
+#### trainModel.ipynb
+This file train the model. here the user have a lot of controll. you controll the pretrained model (resnt vs vgg and the model depth). You controll the the augmentations done on the model. You controll the optimizer and scedualer parameters. You controll the input size. each section of the notebook is explained in the text above. If you run it with no changes at all, it will use the defult parameters.
