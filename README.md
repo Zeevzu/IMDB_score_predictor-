@@ -22,8 +22,8 @@ Link to the Drive with the Project - <p align="center">
   * [Background](#Background)  
   * [Dataset](#Dataset)  
   * [Model](#Model)  
-  * [Training And Results](#Training And Results)
-  * [Files in the repository](#Files%20in%20the%20repository)
+  * [Training And Results](#Training-And-Results)
+  * [Files in the repository](#Files-in-the-repository)
 
 
 ## Background
