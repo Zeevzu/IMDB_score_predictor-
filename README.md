@@ -18,7 +18,7 @@ Link to the Drive with the Project - <p align="center">
 </p>
 
 ## Agenda
-  * [I Just Want to Run The Code](#I%20Just%20Want%20to%20Run%20The%20Code)
+  * [I Just Want to Run The Code](#I-Just-Want-to-Run-The-Code)
   * [Background](#Background)  
   * [Dataset](#Dataset)  
   * [Model](#Model)  
