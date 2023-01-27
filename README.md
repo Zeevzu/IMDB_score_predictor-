@@ -69,6 +69,6 @@ The best model was VGG16. It's final test score (on the normilized data) is 0.76
 The leaning curve of this model is:
 
 <p align="center">
-<img src="./README images/VGG16.png" height="400" > </p>
+<img src="./README images/VggTraining.png" height="400" > </p>
 
 
