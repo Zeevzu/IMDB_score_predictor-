@@ -58,3 +58,17 @@ As mentioned in the Background section, We worked with pre-trained Deep Neural N
 As we can see in the next section, the architecture which achieved the best results was the VGG16, with the following updated architecture as showed below.
 <p align="center">
 <img src="./README images/VGG16.png" height="400" > </p>
+
+
+## Training The Model
+We trained our models with Adam and a learning rate schezualer. Ther were a few training scemes and compaired the results. The schemes included changing the number of input frames to the model (5 RGB frame or 15 RGB frames), changing the input data augmentation (noising/ not noisng the frames, changing frames between ephochs, reordering frames in the input). We also changed the kind and depth of the input models (resnet50, resnet18, vgg16,vgg19). 
+
+We trained the models with mse loss between the predicted score and the real score. In order to ease the learning process, and to improve our understanding of the results we standartize the IMDN score labels.
+We also used l2 regularization.
+The best model was VGG16. It's final test score (on the normilized data) is 0.76. Since the labels are stundertize, the naive guess gives a score of 1. This is a 25% improvement.
+The leaning curve of this model is:
+
+<p align="center">
+<img src="./README images/VGG16.png" height="400" > </p>
+
+
