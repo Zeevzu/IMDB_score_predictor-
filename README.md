@@ -25,6 +25,14 @@ Link to the Drive with the Project - <p align="center">
   * [Training And Results](#Training-And-Results)
   * [Files in the repository](#Files-in-the-repository)
 
+## I Just Want to Run The Code
+
+important - the code containe path that work on google drive with our specific folders. you shold change the path if necessery.
+First run The cell scrape_from_internet.ipynb. This will take a while. make sure you have a good internet connection.
+Then run the file CreateDatasetFromImages.ipynb.
+Lastly make sure you work with a cuda gpu and run the file trainModel.ipynb.
+This will create models called "best_model.pt" and "last_model.pt" that you can use for inference.
+for mor in depth analysis read [Files in the repository](#Files-in-the-repository).
 
 ## Background
 
