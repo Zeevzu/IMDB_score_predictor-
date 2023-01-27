@@ -18,10 +18,11 @@ Link to the Drive with the Project - <p align="center">
 </p>
 
 ## Agenda
+  * [I Just Want to Run The Code](#I%20Just%20Want%20to%20Run%20The%20Code)
   * [Background](#Background)  
   * [Dataset](#Dataset)  
   * [Model](#Model)  
-  * [Training and Results](#Training And Results)
+  * [Training and Results](#Training%20And%20Results)
   * [Files in the repository](#Files%20in%20the%20repository)
 
 
