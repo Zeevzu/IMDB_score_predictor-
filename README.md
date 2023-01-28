@@ -32,7 +32,7 @@ First run The cell scrape_from_internet.ipynb. This will take a while. make sure
 Then run the file CreateDatasetFromImages.ipynb.
 Lastly make sure you work with a cuda gpu and run the file trainModel.ipynb.
 This will create models called "best_model.pt" and "last_model.pt" that you can use for inference.
-for mor in depth analysis read [Files in the repository](#Files-in-the-repository).
+for more in depth analysis read [Files in the repository](#Files-in-the-repository).
 
 ## Background
 
